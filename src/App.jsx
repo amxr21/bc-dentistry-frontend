@@ -20,7 +20,7 @@ function App() {
           <Routes>
             {/* <Route path={["/", "/Dashboard"]}   element={<Home/>} /> */}
             {homePaths.map((path) => (
-              <Route path={path}             element={<Home/>} />
+              <Route key={Math.random() * 10} path={path}             element={<Home/>} />
             ))}
             <Route path="/Patients"             element={<Patients/>} />
             <Route path="/Appointments"         element={<Appointments/>} />

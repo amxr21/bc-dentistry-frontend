@@ -16,10 +16,10 @@ const AppointmentsStatstics = () => {
     Data.forEach((p)=>{
         p.appointments.forEach((appointment) => {
             switch (appointment.status){
-                case "confirmed": appointmentsStatus["Co"]++; console.log(appointment); break;
-                case "done": appointmentsStatus["D"]++; console.log(appointment); break;
-                case "canceled": appointmentsStatus["Ca"]++; console.log(appointment); break;
-                case "pending": appointmentsStatus["P"]++; console.log(appointment); break;
+                case "confirmed": appointmentsStatus["Co"]++; break;
+                case "done": appointmentsStatus["D"]++; break;
+                case "canceled": appointmentsStatus["Ca"]++; break;
+                case "pending": appointmentsStatus["P"]++; break;
             }
         })
     })
