@@ -8,7 +8,6 @@ const AppointmentsBar = () => {
         <MainContainer Id={"AppointmentControlBar"} classes={'gap-y-4'}>
             <AppointmentsControlBar />
             <AppointmentsStatstics />
-
         </MainContainer>
     )
 }

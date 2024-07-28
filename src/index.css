@@ -70,6 +70,15 @@
     font-style: normal;
 }
 
+*{
+    transition: all ease-in-out .3s;
+}
+
+#AddNewAppointmentDialog{
+    transition: all ease-in-out .9s;
+}
+
+
 
 body{
     background-color: #F3F3F3;
