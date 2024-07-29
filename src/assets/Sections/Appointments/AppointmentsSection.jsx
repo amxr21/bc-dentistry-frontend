@@ -23,7 +23,7 @@ const AppointmentsSection = () => {
                             name={Object.keys(apTi)[0].split(',')[0]}
                             status={app.status}
         
-                        />
+                    />
         })
     })
 

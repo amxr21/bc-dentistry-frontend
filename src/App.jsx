@@ -22,8 +22,8 @@ function App() {
             {homePaths.map((path) => (
               <Route key={Math.random() * 10} path={path}             element={<Home/>} />
             ))}
-            <Route path="/Patients"             element={<Patients/>} />
             <Route path="/Appointments"         element={<Appointments/>} />
+            <Route path="/Patients"             element={<Patients/>} />
             <Route path="/Plans"                element={<Plans/>} />
             <Route path="/Medicines"            element={<Medicines/>} />
             <Route path="/Settings"             element={<Settings/>} />

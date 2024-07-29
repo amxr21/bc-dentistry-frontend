@@ -1,29 +1,18 @@
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
 import { useRef, useState } from 'react';
-
 import NewAppointmentDialog from "../Appointments/NewAppointmentDialog";
 import InputComponent from '../InputComponent';
-
-
-import Lo from "../../images/icons/calendar.svg"
+import SetNewAppointment from './SetNewAppointment';
 
 const AppointmentsControlBar = () => {
 
     const dialogg = useRef();
-
-
     const addNewAppointment = () => {
         dialogg.current.classList.replace('translate-y-[30em]', '-translate-y-1/2')
         dialogg.current.classList.replace('opacity-0', 'opacity-100')
-
-
-
         dialogg.current.showModal();
-
     }
- 
-
     const [filterPeriod, setFilterPeriod] = useState("Day");
     const [filterOption, setFilterOption] = useState("Recent");
 
@@ -44,7 +33,6 @@ const AppointmentsControlBar = () => {
                     <MenuItem value="Monthe">This Month</MenuItem>
                 </TextField>
 
-
                 <TextField
                     select
                     value={filterOption}
@@ -59,15 +47,10 @@ const AppointmentsControlBar = () => {
                 </TextField>
 
             </div>
-            <div className="new-appointment bg-gradient-to-r from-blue-800 to-blue-950 py-2 px-3 rounded-md text-white flex items-center gap-x-3">
-                <div className="icon"><img className='w-4' src={Lo} alt="" /></div>
-                <button onClick={addNewAppointment} className="icon">Set a new appointment</button>
-            </div>
+            {/* <SetNewAppointment clickFunc={addNewAppointment} /> */}
 
 
-            <NewAppointmentDialog reff={dialogg} />
-
-
+            {/* <NewAppointmentDialog reff={dialogg} /> */}
 
         </div>
     )

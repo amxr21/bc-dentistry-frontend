@@ -25,8 +25,6 @@ const AppointmentsStatstics = () => {
     })
 
 
-
-
     return (
         <div id="AppointmentsStatstics" className="flex col-span-12 gap-x-4">
             <Appointment header={appointmentsStatus['D']+appointmentsStatus['Co']+appointmentsStatus['P']+appointmentsStatus['Ca']} subheader={"All appointments"} icon={Alarm1}/>
@@ -34,7 +32,6 @@ const AppointmentsStatstics = () => {
             <Appointment header={appointmentsStatus['Ca']} subheader={"Canceled appointments"} icon={Alarm3}/>
             <Appointment header={appointmentsStatus['Co']} subheader={"Finished appointments"} icon={Visitors}/>
             <Appointment header={appointmentsStatus['D']+appointmentsStatus['Co']+appointmentsStatus['P']+appointmentsStatus['Ca']} subheader={"Total visitors"} icon={Alarm1}/>
-
         </div>
     )
 }

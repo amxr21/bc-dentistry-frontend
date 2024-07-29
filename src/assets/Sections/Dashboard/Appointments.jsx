@@ -5,8 +5,6 @@ import Alarm2 from "../../images/icons/alarm2.svg"
 import Alarm3 from "../../images/icons/alarm3.svg"
 import Visitors from "../../images/icons/visitors.svg"
 
-
-
 const Appointments = () => {
     let appointmentsStatus = {
         'D': 0,
@@ -14,9 +12,6 @@ const Appointments = () => {
         'P': 0,
         'Ca': 0,
     }
-
-
-
 
     Data.forEach((p)=>{
         p.appointments.forEach((appointment) => {
@@ -28,10 +23,6 @@ const Appointments = () => {
             }
         })
     })
-
- 
-
-
 
     return (
         <div id="AppointmentsSection" className="grid grid-cols-2 gap-x-4 gap-y-4 justify-start col-span-4">

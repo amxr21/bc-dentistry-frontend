@@ -43,11 +43,7 @@ const xLabels = {
 
 
 export default function SimpleBarChart() {
-  const [ layout, setLayout ] = useState("Days")
-
-
-
-
+  const [ layout, setLayout ] = useState("Days") 
 
   return (
     <div className='col-span-5 bg-white rounded-md px-8 py-6 overflow-hidden h-80'>
@@ -56,11 +52,10 @@ export default function SimpleBarChart() {
         <TextField
             select
             sx={{ minWidth: 150 }}
-             
             value={layout}
             size='small'
             onChange={(event) => {setLayout(event.target.value); console.log(event.target.value);}}
-          >
+        >
             <MenuItem value="Days">By Days</MenuItem> 
             <MenuItem value="Monthes">By Monthes</MenuItem> 
             <MenuItem value="Years">By Years</MenuItem>
@@ -68,8 +63,6 @@ export default function SimpleBarChart() {
         </TextField>
 
       </div>
-
-
       <BarChart
         width={450}
         height={250}
