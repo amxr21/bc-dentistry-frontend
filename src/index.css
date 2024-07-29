@@ -71,7 +71,7 @@
 }
 
 *{
-    transition: all ease-in-out .3s;
+    transition: height .3s ease-in-out;
 }
 
 #AddNewAppointmentDialog{

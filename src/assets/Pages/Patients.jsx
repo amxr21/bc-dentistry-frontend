@@ -1,6 +1,5 @@
 import PatientsCards from "../Sections/Patients/PatientsCards";
 import PatientsFilters from "../Sections/Patients/PatientsFilters";
-import { MainContainer } from "../components";
 
 import Lo from "../images/icons/calendar.svg"
 
