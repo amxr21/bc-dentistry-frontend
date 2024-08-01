@@ -17,7 +17,7 @@ const Data=[{
     },
     "appointments": [
         {
-            "date": "25.07.2024",
+            "date": "05.08.2024",
             "time": "10:00:00",
             "status": "confirmed",
             "type": "Consultation",
@@ -45,7 +45,7 @@ const Data=[{
             }
         },
         {
-            "date": "25.07.2024",
+            "date": "05.08.2024",
             "time": "16:00:00",
             "status": "pending",
             "type": "Consultation",
@@ -59,7 +59,7 @@ const Data=[{
             }
         },
         {
-            "date": "25.07.2024",
+            "date": "05.08.2024",
             "time": "18:00:00",
             "status": "confirmed",
             "type": "Consultation",
@@ -133,7 +133,7 @@ const Data=[{
     },
     "appointments": [
         {
-            "date": "28.07.2024",
+            "date": "02.08.2024",
             "time": "14:00:00",
             "status": "pending",
             "type": "Dental",
@@ -207,7 +207,7 @@ const Data=[{
     },
     "appointments": [
         {
-            "date": "29.07.2024",
+            "date": "03.08.2024",
             "time": "09:00:00",
             "status": "done",
             "type": "Cardiology",
@@ -281,7 +281,7 @@ const Data=[{
     },
     "appointments": [
         {
-            "date": "10.09.2024",
+            "date": "03.08.2024",
             "time": "11:00:00",
             "status": "canceled",
             "type": "Dermatology",
@@ -355,7 +355,7 @@ const Data=[{
     },
     "appointments": [
         {
-            "date": "25.07.2024",
+            "date": "05.08.2024",
             "time": "16:00:00",
             "status": "confirmed",
             "type": "Orthopedics",

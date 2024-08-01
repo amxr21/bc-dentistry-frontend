@@ -74,8 +74,8 @@
     transition: height .3s ease-in-out;
 }
 
-#AddNewAppointmentDialog{
-    transition: all ease-in-out .9s;
+#AddNewPatientDialog{
+    transition: all ease-in-out .5s;
 }
 
 

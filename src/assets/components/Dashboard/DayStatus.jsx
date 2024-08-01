@@ -35,7 +35,7 @@ const DayStatus = ({appointmentStatus,dayDate}) => {
                 }
                 </div>
             </div>
-            <div className="day-date text-3xl font-bold bg-gray-200 p-1 rounded-lg">
+            <div className="day-date w-[1.55em] h-[1.55em] flex items-center justify-center text-3xl font-bold bg-gray-200 p-1 rounded-lg">
                 {dayDate}
             </div>
         </>
