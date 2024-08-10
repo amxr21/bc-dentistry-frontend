@@ -7,7 +7,7 @@ const Filter = ({FilterTitle, FilterId, FilterLabels}) => {
             <div className="flex flex-col gap-y-1 h-36 overflow-hidden text-gray-500">
                 {
                     FilterLabels.map((f) => {
-                        return <FilterBox Id={FilterId} Label={f} />
+                        return <FilterBox key={f} Id={FilterId} Label={f} />
                     })
                 }
             </div>

@@ -22,13 +22,14 @@ const PatientsCards = () => {
 
         return (
             <PatientCard
-                    patientId={patient.id}
-                    fullName={patient.name}
-                    age={d.getFullYear() - patient['date-of-birth'].split('.').pop()}
-                    gender={patient.gender}
-                    insurance={patient.insurance['company-name']}
-                    medicalRecord={medicalRecordObj}
-                    dentalRecord={dentalRecordObj}
+                key={patient.id}
+                patientId={patient.id}
+                fullName={patient.name}
+                age={d.getFullYear() - patient['date-of-birth'].split('.').pop()}
+                gender={patient.gender}
+                insurance={patient.insurance['company-name']}
+                medicalRecord={medicalRecordObj}
+                dentalRecord={dentalRecordObj}
             />
         )
     })
@@ -37,9 +38,9 @@ const PatientsCards = () => {
 
     return (
         <div id="PatientsCards" className="rounded-md">
-            <Box classes={'grid grid-cols-4 gap-3 p-0 '}>
+            <div className='grid grid-cols-4 gap-3 p-0'>
                 {patientsCards}
-            </Box>
+            </div>
 
 
 

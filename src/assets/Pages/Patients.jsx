@@ -14,7 +14,7 @@ const Patients = () => {
 
                     <div className="new-patient bg-gradient-to-r from-blue-800 to-blue-950 py-2 px-3 rounded-md text-white flex items-center gap-x-3 w-fit">
                         <div className="icon"><img className='w-5 h-5' src={Lo} alt="" /></div>
-                        <button className="icon"><a href="#addNewPatient">Add a new Patient</a></button>
+                        <button onClick={() => {document.getElementById('AddNewPatientDialog').lastElementChild.scrollTop = 0}} id="addNewPatientBtn" className="icon"><a href="#addNewPatient">Add a new Patient</a></button>
                     </div>
 
 
