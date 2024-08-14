@@ -1,14 +1,12 @@
 import { BrowserRouter as Router, Routes, Route, useRoutes } from "react-router-dom";
 
-import { Home, Patients, Appointments, Plans, Medicines, Settings, Info } from "./assets/Pages"
+import { Home, Patients, Appointments, Plans, LabResults, Settings, Info, Patient } from "./assets/Pages"
 import Navbar from "./assets/Sections/Navbar.jsx"
 import Topbar from "./assets/Sections/Topbar.jsx"
 
 
 function App() {
   const homePaths = ["/", "/Dashboard"]
-  
-
 
 
   return (
@@ -18,14 +16,14 @@ function App() {
         <div className="ml-[14em] flex w-full">
           <Topbar />
           <Routes>
-            {/* <Route path={["/", "/Dashboard"]}   element={<Home/>} /> */}
             {homePaths.map((path) => (
-              <Route key={Math.random() * 10} path={path}             element={<Home/>} />
+              <Route key={Math.random() * 10} path={path} element={<Home/>} />
             ))}
             <Route path="/Appointments"         element={<Appointments/>} />
             <Route path="/Patients"             element={<Patients/>} />
+            <Route path="/Patients/:id"         element={<Patient/>} />
             <Route path="/Plans"                element={<Plans/>} />
-            <Route path="/Medicines"            element={<Medicines/>} />
+            <Route path="/LabResults"            element={<LabResults/>} />
             <Route path="/Settings"             element={<Settings/>} />
             <Route path="/Info"                 element={<Info/>} />
           </Routes>

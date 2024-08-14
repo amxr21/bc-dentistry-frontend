@@ -6,10 +6,6 @@ const Progress = ({progressName}) => {
 
     const a = {"#addNewPatient" : 'Profile Info', "#sp2" : 'Medical Record', "#sp3" : 'Insurance'}
 
-    useEffect(() => {
-        console.log(hash, a[hash], progressName, a[hash] == progressName);
-        
-    }, [])
 
     if(a[hash] == progressName){
         return (

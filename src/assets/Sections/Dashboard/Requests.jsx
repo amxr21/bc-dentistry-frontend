@@ -20,8 +20,8 @@ const Requests = () => {
                 {
                     a.map((req) => {
                         if(Object.values(req)[0].length != 0){
-                                appointmentComponent = Object.values(req)[0].map((reqD) => {
-                                    return <AppointmentRequest patientName={Object.keys(req)[0]} date={reqD.date} time={reqD.time} type={reqD.type} status={"p"} />
+                                appointmentComponent = Object.values(req)[0].map((reqD, index) => {
+                                    return <AppointmentRequest key={index} patientName={Object.keys(req)[0]} date={reqD.date} time={reqD.time} type={reqD.type} status={"p"} />
                                 })
                                 return appointmentComponent;
                             }

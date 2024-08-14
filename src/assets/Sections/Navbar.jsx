@@ -10,11 +10,11 @@ import Icon6 from "../images/icons/settings.png";
 import Icon7 from "../images/icons/info.png";
 
 const navList = [
-    { title: "Dashboard", icon: Icon1 },
-    { title: "Appointments", icon: Icon2 },
-    { title: "Patients", icon: Icon3 },
-    { title: "Medicines", icon: Icon4 },
-    { title: "Plans", icon: Icon5 },
+    { title: "Dashboard", link:'Dashboard', icon: Icon1 },
+    { title: "Appointments", link:'Appointments', icon: Icon2 },
+    { title: "Patients", link:'Patients', icon: Icon3 },
+    { title: "Lab Results", link:'LabResults', icon: Icon4 },
+    { title: "Plans", link:'Plans', icon: Icon5 },
  
 ];
 
@@ -30,8 +30,8 @@ const Navbar = () => {
         navList.map((nav) => {
             const isActive = nav.title.toLowerCase() === currentPath.toLowerCase();
             return (
-                <Link key={nav.title} to={`/${nav.title.toLowerCase()}`}>
-                    <NavLink icon={nav.icon} link={nav.title} classes={isActive ? "font-bold" : "font-light"} />
+                <Link key={nav.title} to={`/${nav.link.toLowerCase()}`}>
+                    <NavLink icon={nav.icon} title={nav.title} link={nav.link} classes={isActive ? "font-bold" : "font-light"} />
                 </Link>
             );
         });
@@ -44,8 +44,8 @@ const Navbar = () => {
                     {renderNavLinks()}
                 </div>
                 <div className="personal flex flex-col gap-y-6 items-center">
-                    <NavLink icon={Icon6} link={"setting"} />
-                    <NavLink icon={Icon7} link={"info"} />
+                    <NavLink icon={Icon6} title={"setting"} link={"setting"} />
+                    <NavLink icon={Icon7} title={"info"} link={"info"} />
                 </div>
             </div>
         </div>

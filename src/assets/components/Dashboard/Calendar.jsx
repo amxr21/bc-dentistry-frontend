@@ -8,7 +8,7 @@ export default function Calendar() {
   return (
     <div className='col-span-3 bg-white h-80 rounded-md'>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DateCalendar />
+          <DateCalendar />
         </LocalizationProvider>
     </div>
   );

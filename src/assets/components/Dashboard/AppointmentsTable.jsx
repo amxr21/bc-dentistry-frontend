@@ -10,8 +10,8 @@ const AppointmentsTable = () => {
     console.log(patientsAppointments);
 
     let ab = patientsAppointments.map((paAp) => {
-        return Object.values(paAp)[0].sort((a,b) => a.date.slice(0,2) - b.date.slice(0,2)).map((ap) => {
-            return <AppointmentTableRow meetingFor={ap.reason} id={ap.dr.id.slice(4)} patientName={Object.keys(paAp)} doctorName={ap.dr.name} dateAndTime={`${ap.date} ${ap.time}`} />
+        return Object.values(paAp)[0].sort((a,b) => a.date.slice(0,2) - b.date.slice(0,2)).map((ap, index) => {
+            return <AppointmentTableRow key={index} meetingFor={ap.reason} id={ap.dr.id.slice(4)} patientName={Object.keys(paAp)} doctorName={ap.dr.name} dateAndTime={`${ap.date} ${ap.time}`} />
         })
 
     })

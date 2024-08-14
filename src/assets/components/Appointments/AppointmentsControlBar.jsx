@@ -47,10 +47,6 @@ const AppointmentsControlBar = () => {
                 </TextField>
 
             </div>
-            {/* <SetNewAppointment clickFunc={addNewAppointment} /> */}
-
-
-            {/* <NewAppointmentDialog reff={dialogg} /> */}
 
         </div>
     )
