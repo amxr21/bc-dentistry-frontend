@@ -3,7 +3,7 @@ import Notifications from "../components/Notifications";
 
 const Topbar = () => {
     return (
-        <div id="top-bar" className="px-12 py-6 flex fixed w-[92em] h-30 z-50 shadow-sm ">
+        <div id="top-bar" className="py-6 w-full h-fit z-50 shadow-sm">
             <div className="flex justify-between w-full">
                 <SearchBar />
                 <Notifications />

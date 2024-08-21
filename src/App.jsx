@@ -13,8 +13,10 @@ function App() {
     <div className="flex">
       <Router>
         <Navbar />
-        <div className="ml-[14em] flex w-full">
+        <div className="relative ml-[14em] flex flex-col w-full px-10">
           <Topbar />
+
+
           <Routes>
             {homePaths.map((path) => (
               <Route key={Math.random() * 10} path={path} element={<Home/>} />

@@ -1,6 +1,6 @@
 const MainContainer = ({Id, children, classes, stlyes}) => {
     return (
-        <div id={Id} className={`grid grid-cols-12 mt-32 px-12 gap-x-8 ${classes}`} >
+        <div id={Id} className={`grid grid-cols-12 gap-x-8 ${classes}`} style={stlyes} >
             {children}
         </div>
     )

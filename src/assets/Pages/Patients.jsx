@@ -6,7 +6,7 @@ import Lo from "../images/icons/calendar.svg"
 
 const Patients = () => {
     return (
-        <div id="Patients" className="grid grid-cols-12 mt-32 px-12 gap-x-8" style={{gridTemplateColumns: '2fr 8fr'}}>
+        <div id="Patients" className="grid grid-cols-12 gap-x-8" style={{gridTemplateColumns: '2fr 8fr'}}>
             <PatientsFilters />
             <div className="flex flex-col w-full gap-y-4">
                 <div className="flex items-center bg-white px-4 py-3 rounded-md w-full justify-between">
