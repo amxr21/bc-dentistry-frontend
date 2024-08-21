@@ -16,7 +16,7 @@ const Patient = () => {
     return (
         <MainContainer classes={'w-full my-6'}>
             <div className="col-span-12 flex flex-col gap-y-4">
-                <PatientMainBar id={patientDetails[0].id} fullName={patientDetails[0].name} gender={patientDetails[0].gender} dob={patientDetails[0]["date-of-birth"]} />
+                <PatientMainBar id={patientDetails[0].id} fullName={patientDetails[0].name} gender={patientDetails[0].Gender} dob={patientDetails[0]["date-of-birth"]} />
                 <PatientPersonalInfo />
                 <MedicalRecord />
                 <DentalRecord dentalDetails={patientDetails[0]['dental-details']} />

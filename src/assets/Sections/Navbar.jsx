@@ -37,7 +37,7 @@ const Navbar = () => {
         });
 
     return (
-        <div id="Navbar" className="bg-[#000814] w-[14em] h-full fixed px-6 py-10">
+        <div id="Navbar" className="bg-[#000814] w-[14%] h-full fixed px-6 py-10">
             <NavLogo />
             <div id="Navlinks" className="text-white flex flex-col gap-y-12 mt-16">
                 <div className="main flex flex-col gap-y-6 items-center">

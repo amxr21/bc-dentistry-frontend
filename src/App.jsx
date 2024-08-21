@@ -13,7 +13,7 @@ function App() {
     <div className="flex">
       <Router>
         <Navbar />
-        <div className="relative ml-[14em] flex flex-col w-full px-10">
+        <div className="relative ml-[14%] flex flex-col w-full px-10">
           <Topbar />
 
 

@@ -33,7 +33,7 @@ const AppointmentTicket = ({date, time, reason, dr, id, name, status}) => {
 
 
     return (
-        <div className="appointment-ticket col-span-3 bg-white p-5 flex flex-col gap-y-3 rounded-md">
+        <div className="appointment-ticket col-span-5 xl:col-span-4 2xl:col-span-3 bg-white p-5 flex flex-col gap-y-3 rounded-md">
             <div className="for">
                 <div className="date-time bg-blue-900 flex items-center justify-between w-full px-3 py-2 text-white rounded-md mb-2">
                     <div className="date">{date}</div>
@@ -45,7 +45,7 @@ const AppointmentTicket = ({date, time, reason, dr, id, name, status}) => {
             <div className="line border-b border-b-2"></div>
             <div className="details">
                 <div className="id text-gray-300">ID: {id}</div>
-                <div className="patient-name text-2xl font-bold">{name}</div>
+                <div className="patient-name text-2xl font-bold h-16">{name}</div>
                 <div className="status font-semibold">{status}</div>
                 <div className="options relative">
                     <div className=" py-1 text-center border border-blue-800 mt-4 rounded-md font-semibold text-lg">

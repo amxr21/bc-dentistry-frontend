@@ -38,7 +38,7 @@ const PatientsCards = () => {
 
     return (
         <div id="PatientsCards" className="rounded-md">
-            <div className='grid grid-cols-4 gap-3 p-0'>
+            <div className='grid grid-cols-3 2xl:grid-cols-4 gap-3 p-0'>
                 {patientsCards}
             </div>
 
