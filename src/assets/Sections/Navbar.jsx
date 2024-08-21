@@ -28,7 +28,7 @@ const Navbar = () => {
 
     const renderNavLinks = () =>
         navList.map((nav) => {
-            const isActive = nav.title.toLowerCase() === currentPath.toLowerCase();
+            const isActive = nav.link.toLowerCase() === currentPath.toLowerCase();
             return (
                 <Link key={nav.title} to={`/${nav.link.toLowerCase()}`}>
                     <NavLink icon={nav.icon} title={nav.title} link={nav.link} classes={isActive ? "font-bold" : "font-light"} />
