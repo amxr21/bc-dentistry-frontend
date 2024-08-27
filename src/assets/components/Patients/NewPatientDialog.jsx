@@ -183,9 +183,9 @@ const NewPatientDialog = () => {
         <div id='AddNewPatientDialog' className='fixed bg-white drop-shadow-xl w-[68em] h-[36em] inset-1/2 -translate-x-1/2 translate-y-[30em] z-50 rounded-md opacity-0 grid grid-cols-12 gap-x-6 overflow-hidden' style={{gridTemplateColumns: '3fr 7fr'}}>
             <NewPatientDialog1 />
             <div className="h-[36em] overflow-y-scroll no-scrollbar">
-                <NewPatientDialog2 dialogStructure={PersonalInfoObj} buttonText={'Next'} hashh={'#sp2'} dialogSectionId={'#addNewPatient'} />
-                <NewPatientDialog2 dialogStructure={MedicalInfoObj} buttonText={'Next'} hashh={'#sp3'} dialogSectionId={'sp2'} />
-                <NewPatientDialog2 dialogStructure={InusranceInfoObj} buttonText={'Submit'} hashh={'#'} dialogSectionId={'sp3'} />
+                <NewPatientDialog2 dialogStructure={PersonalInfoObj} buttonTextP={''} buttonTextN={'Next'} hashhN={'#sp2'} dialogSectionId={'addNewPatient'} />
+                <NewPatientDialog2 dialogStructure={MedicalInfoObj} buttonTextP={'Prev'}  buttonTextN={'Next'} hashhP={'#addNewPatient'} hashhN={'#sp3'} dialogSectionId={'sp2'} />
+                <NewPatientDialog2 dialogStructure={InusranceInfoObj} buttonTextP={'Prev'}  buttonTextN={'Submit'} hashhP={'#sp2'} hashhN={'#'} dialogSectionId={'sp3'} />
             </div>
 
         </div>

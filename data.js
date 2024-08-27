@@ -18,7 +18,7 @@ const Data = [
         },
         'appointments': [
             {
-                "date": "18.08.2024",
+                "date": "28.08.2024",
                 "time": "10:00:00",
                 "status": "confirmed",
                 "type": "Consultation",
@@ -99,7 +99,7 @@ const Data = [
         },
         'appointments': [
             {
-                "date": "20.09.2024",
+                "date": "30.08.2024",
                 "time": "11:30:00",
                 "status": "pending",
                 "type": "Specialist Consultation",
@@ -234,7 +234,7 @@ const Data = [
         },
         'appointments': [
             {
-                "date": "22.08.2024",
+                "date": "30.08.2024",
                 "time": "09:00:00",
                 "status": "confirmed",
                 "type": "Dental",
@@ -315,7 +315,7 @@ const Data = [
         },
         'appointments': [
             {
-                "date": "25.10.2024",
+                "date": "02.09.2024",
                 "time": "14:00:00",
                 "status": "confirmed",
                 "type": "Gynecology",
@@ -396,7 +396,7 @@ const Data = [
         },
         'appointments': [
             {
-                "date": "05.11.2024",
+                "date": "05.09.2024",
                 "time": "12:00:00",
                 "status": "pending",
                 "type": "Cardiology",
@@ -477,7 +477,7 @@ const Data = [
         },
         'appointments': [
             {
-                "date": "15.12.2024",
+                "date": "31.08.2024",
                 "time": "16:00:00",
                 "status": "confirmed",
                 "type": "Orthopedics",
@@ -558,7 +558,7 @@ const Data = [
         },
         'appointments': [
             {
-                "date": "20.08.2024",
+                "date": "30.08.2024",
                 "time": "09:00:00",
                 "status": "confirmed",
                 "type": "Dermatology",
@@ -639,9 +639,9 @@ const Data = [
         },
         'appointments': [
             {
-                "date": "30.09.2024",
+                "date": "27.08.2024",
                 "time": "13:00:00",
-                "status": "confirmed",
+                "status": "canceled",
                 "type": "Ophthalmology",
                 "reason": "Eye Check-up",
                 "dr": {
