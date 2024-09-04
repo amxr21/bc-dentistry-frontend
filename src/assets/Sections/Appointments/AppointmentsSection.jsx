@@ -10,8 +10,6 @@ const AppointmentsSection = () => {
     const appointmentsTickets = Data.map((data) => ({[[data.name,data.id]]: data.appointments}))
 
 
-    console.log(appointmentsTickets);
-
     allAppointments = appointmentsTickets.map((apTi) => {
         return Object.values(apTi)[0].sort((a, b) => a.date.slice(0,2) - b.date.slice(0,2)).map((app, index) => {
             return <AppointmentTicket

@@ -11,8 +11,6 @@ const DayStatus = ({appointmentStatus,dayDate}) => {
     })
 
 
-    console.log(num);
-
     return (
         <>
             <div className="day-status flex flex-col items-center w-14 px-2">

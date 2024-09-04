@@ -8,9 +8,9 @@ const LabResultsSection = () => {
     const {filters, setFilters} = useContext(FiltersContext);
     const {sortDate, setSortDate} = useContext(FiltersContext);
 
-    const today = new Date()
+    const today = new Date();
     console.log(today.getDate());
-    
+
 
     return (
         <div className="lab-results-section flex col-span-12 rounded-md w-full items-center grid grid-cols-3 2xl:grid-cols-4 gap-6 justify-end">

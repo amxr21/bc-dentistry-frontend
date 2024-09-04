@@ -1,18 +1,26 @@
 import DentalChart from "./DentalChart";
+import DentalInfo from "./DentalInfo";
 import DetailInfo from "./DetailInfo";
 
+import { useContext } from "react";
+import { TeethContextContainer } from "../../Context/TeethContext";
+
 const DentalRecord = ({dentalDetails}) => {
+
+    // console.log(dentalDetails);
+    
     return (
-        <div className="DentalRecord bg-white rounded-md flex gap-x-10 items-left flex flex-col gap-y-6 w-full px-16 py-6">
+        <div className="DentalRecord bg-white rounded-md flex gap-x-6 items-left flex flex-col gap-y-6 w-full px-16 py-6 bg-red-200 ">
             <h1 className="text-3xl font-bold">Dental Record</h1>
-            <div className="info grid grid-cols-6 gap-y-1 gap-x-2">
-                {
-                    Object.entries(dentalDetails).map((detail) => {
-                        return <DetailInfo classes={' '} header={detail[0]} info={detail[1]} />
-                    })
-                }
+            <div className="flex justify-between gap-x-8 w-full" >
+
+                <TeethContextContainer>
+                    <DentalChart dentalTeethDetails={dentalDetails}  />
+                    <DentalInfo details={dentalDetails} />
+                </TeethContextContainer>
+
+
             </div>
-            <DentalChart />
         </div>
     )
 }

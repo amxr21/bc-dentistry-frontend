@@ -13,6 +13,9 @@ const Patient = () => {
         return patient.id == path.split('/').pop();
     })
 
+
+
+    
     return (
         <MainContainer classes={'w-full my-6'}>
             <div className="col-span-12 flex flex-col gap-y-4">
