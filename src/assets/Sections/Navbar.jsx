@@ -14,7 +14,7 @@ const navList = [
     { title: "Appointments", link:'Appointments', icon: Icon2 },
     { title: "Patients", link:'Patients', icon: Icon3 },
     { title: "Lab Results", link:'LabResults', icon: Icon4 },
-    { title: "Plans", link:'Plans', icon: Icon5 },
+    { title: "DataRequests", link:'DataRequests', icon: Icon5 },
  
 ];
 

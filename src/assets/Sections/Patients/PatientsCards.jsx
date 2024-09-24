@@ -2,6 +2,7 @@ import Box from "../../components/Box"
 import PatientCard from "../../components/Patients/PatientCard";
 import Data from '../../../../data'
 import NewPatientDialog from "../../components/Patients/NewPatientDialog";
+import RequestPatientCard from "../../components/Patients/RequestPatientCard";
 
 const PatientsCards = () => {
 
@@ -39,6 +40,7 @@ const PatientsCards = () => {
     return (
         <div id="PatientsCards" className="rounded-md">
             <div className='grid grid-cols-3 2xl:grid-cols-4 gap-3 p-0'>
+                <RequestPatientCard />
                 {patientsCards}
             </div>
 

@@ -18,7 +18,7 @@ const Data = [
         },
         'appointments': [
             {
-                "date": "28.08.2024",
+                "date": "28.09.2024",
                 "time": "10:00:00",
                 "status": "confirmed",
                 "type": "Consultation",

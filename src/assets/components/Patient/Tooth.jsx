@@ -19,11 +19,11 @@ const Tooth = ({category, code, site, suf}) => {
     return (
         <div onClick={() => {setToothSite(site)}} className="relative w-fit tooth bg-red-800">
 
-                <div className="B centerPart bg-[lightgray] relative h-[40px] w-[50px]">
+                <div onClick={()=>{console.log('-----')}} className="Occlusal centerPart bg-[lightgray] relative h-[52px] w-[65px]">
                     <svg
                         onClick={changeColorOnEnter}
                         onMouseLeave={changeColorOnLeave}
-                        className="h-full w-full" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 311.14">
+                        className="Occlusal h-full w-full" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 311.14">
                         <rect
                             width="400" height="311.14"
                             style={{fill:"white", stroke: '#000', strokeLnecap:'round', strokeLinejoin: 'round', strokeWidth:"1px"}}
@@ -48,7 +48,7 @@ const Tooth = ({category, code, site, suf}) => {
                                     createdDate={side[0]['Created_Date']}
                                 />
                                 <ToothFraction
-                                    type={"Occlusal"}
+                                    type={"Lingual"}
                                     status={side[0]['Status']}
                                     preAuth={side[0]['Pre_Auth']}
                                     phase={side[0]['Phase']}

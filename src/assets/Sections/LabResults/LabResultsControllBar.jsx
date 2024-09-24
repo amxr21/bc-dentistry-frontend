@@ -17,6 +17,7 @@ const LabResultsControllBar = () => {
             <div className="flex gap-x-4">
                 <h2>Show:</h2>
                 <div className="boxes flex gap-x-4">
+                    <CheckBox id={'WayToTheLab'} label={'way to the lab'} />
                     <CheckBox id={'UnderProgress'} label={'under progress'} />
                     <CheckBox id={'completed'} label={'completed'} />
                 </div>

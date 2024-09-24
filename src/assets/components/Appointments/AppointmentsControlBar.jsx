@@ -11,7 +11,7 @@ const AppointmentsControlBar = () => {
     const addNewAppointment = () => {
         dialogg.current.classList.replace('translate-y-[30em]', '-translate-y-1/2')
         dialogg.current.classList.replace('opacity-0', 'opacity-100')
-        dialogg.current.showModal();
+        dialogg.current?.showModal();
     }
     const [filterPeriod, setFilterPeriod] = useState("Day");
     const [filterOption, setFilterOption] = useState("Recent");
@@ -47,6 +47,10 @@ const AppointmentsControlBar = () => {
                 </TextField>
 
             </div>
+            <SetNewAppointment clickFunc={addNewAppointment} />
+
+
+            <NewAppointmentDialog reff={dialogg}/>
 
         </div>
     )

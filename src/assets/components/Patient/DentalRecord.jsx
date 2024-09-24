@@ -10,9 +10,9 @@ const DentalRecord = ({dentalDetails}) => {
     // console.log(dentalDetails);
     
     return (
-        <div className="DentalRecord bg-white rounded-md flex gap-x-6 items-left flex flex-col gap-y-6 w-full px-16 py-6 bg-red-200 ">
+        <div className="DentalRecord bg-white rounded-md flex items-left flex flex-col gap-6 w-full px-16 py-6 h-[32em]">
             <h1 className="text-3xl font-bold">Dental Record</h1>
-            <div className="flex justify-between gap-x-8 w-full" >
+            <div className="flex justify-between gap-x-8 w-full">
 
                 <TeethContextContainer>
                     <DentalChart dentalTeethDetails={dentalDetails}  />

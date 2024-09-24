@@ -8,7 +8,7 @@ const Topbar = () => {
                 <SearchBar />
                 <Notifications />
             </div>
-            <div id="rect" className="border-b my-5"></div>
+            {/* <div id="rect" className="border-b my-5"></div> */}
         </div>
     )
 }
