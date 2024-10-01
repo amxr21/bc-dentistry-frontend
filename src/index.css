@@ -90,3 +90,28 @@ body{
 .no-scrollbar::-webkit-scrollbar{
     display: none;
 }
+
+/* Customize scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 8px;     /* Make the scrollbar handle rounded */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;    /* Background color of the scrollbar track */
+    border-radius: 8px;     /* Make the track rounded */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;       /* Darker color when hovering over the scrollbar */
+  }
+  
+  /* Ensure smooth scrolling */
+  .custom-scrollbar {
+    scroll-behavior: smooth;
+  }
+  

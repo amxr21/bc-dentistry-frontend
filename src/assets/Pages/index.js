@@ -6,3 +6,5 @@ export {default as DataRequests} from "./DataRequests";
 export {default as Settings} from "./Settings";
 export {default as Info} from "./Info";
 export {default as Patient} from "./Patient";
+export {default as Login} from "./Login";
+export {default as Signup} from "./Signup";

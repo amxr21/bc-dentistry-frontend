@@ -4,7 +4,7 @@ const SetNewAppointment = ({Id, option}) => {
     const a = useRef();
 
     const newAppointment = () => {
-        // if(Id == "new")
+        document.getElementById('Form1').classList.replace('max-h-0', 'max-h-fit')
     }
 
 

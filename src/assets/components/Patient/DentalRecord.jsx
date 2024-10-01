@@ -11,7 +11,7 @@ const DentalRecord = ({dentalDetails}) => {
     
     return (
         <div className="DentalRecord bg-white rounded-md flex items-left flex flex-col gap-6 w-full px-16 py-6 h-[32em]">
-            <h1 className="text-3xl font-bold">Dental Record</h1>
+            <h1 className="text-3xl font-bold">Dental Record <span className="text-xl italic text-gray-300 font-light uppercase">id {dentalDetails['id']}</span></h1>
             <div className="flex justify-between gap-x-8 w-full">
 
                 <TeethContextContainer>

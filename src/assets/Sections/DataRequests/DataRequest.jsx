@@ -1,7 +1,7 @@
-import DataRequestBtn from "./DataRequestBtn";
-import DataRequestDescription from "./DataRequestDescription";
-import DataRequestHeader from "./DataRequestHeader";
-import DataRequestType from "./DataRequestType";
+import DataRequestBtn from "../../components/DataRequests/DataRequestBtn";
+import DataRequestDescription from "../../components/DataRequests/DataRequestDescription";
+import DataRequestHeader from "../../components/DataRequests/DataRequestHeader";
+import DataRequestType from "../../components/DataRequests/DataRequestType";
 
 const DataRequest = ({id, type, fileType, dataType, description, requester, status, data}) => {
     if(type == 'on-chain'){
@@ -14,15 +14,15 @@ const DataRequest = ({id, type, fileType, dataType, description, requester, stat
                     <h2>Requested from: <span className="font-semibold">{requester}</span> </h2>
                 </div>
 
-                <DataRequestBtn FileUrl={data.fileUrl} FileSize={data.fileSize} />
+                <DataRequestBtn DataStatus={status} FileContent={""} FileUrl={data.fileUrl} FileSize={data.fileSize} />
 
             </div>
         )
     }
 
 // *******************************************************************
-
 //for off chain modify the card info
+
 //add smooth animtation to to set an appointment form
 // switch between roles
 
@@ -39,7 +39,7 @@ const DataRequest = ({id, type, fileType, dataType, description, requester, stat
                     <h2>Requested from: <span className="font-semibold">{requester}</span> </h2>
                 </div>
 
-                <DataRequestBtn FileUrl={data.fileUrl} FileSize={data.fileSize} />
+                <DataRequestBtn DataStatus={status} FileContent={'treatmentHistory'} FileUrl={''} FileSize={data.fileSize} />
 
             </div>
         )

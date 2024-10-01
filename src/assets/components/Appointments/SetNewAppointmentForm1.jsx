@@ -14,15 +14,17 @@ const appointmentReasons = [
 
 
 
-const SetNewAppointmentForm1 = () => {
+const SetNewAppointmentForm1 = ({Id, classes}) => {
      console.log(Data)
 
 
-
+    const gNext = () => {
+        document.getElementById('Form2').classList.replace('max-h-0', 'max-h-fit')
+    }
 
 
     return (
-        <div className="flex gap-x-6 my-4 justify-between">
+        <div id={Id} className={`flex gap-x-6 my-4 justify-between overflow-hidden h-36 ${classes}`}>
             <div className="pfp min-w-32 min-h-32 w-32 h-32 bg-gray-500 rounded-3xl bg-blue-500">
                 <img src="" alt="pfp" />
             </div>
@@ -37,6 +39,7 @@ const SetNewAppointmentForm1 = () => {
                     <AppointmentReasonsList header={'Appointment for: '} list={appointmentReasons} /> 
                     <AppointmentReasonsList header={'Appointment for: '} list={[...Data.map((e) => e.name) ]} /> 
                 </div>
+                <button onClick={gNext}>Go next</button>
             </div>
         </div>
     )

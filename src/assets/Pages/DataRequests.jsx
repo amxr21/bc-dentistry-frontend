@@ -9,7 +9,7 @@ const DataRequests = () => {
 
     return (
         <div id="DataRequests" className="my-6">
-            <h2 className="text-3xl font-bold mb-6">Data Requests</h2>
+            <h2 className="text-3xl font-bold mb-6">{`Data Requests (${DataRequestsData.length})`}</h2>
             <div className="data-requests-section grid grid-cols-4 gap-4">
                 {
                     DataRequestsData.map((request) => {

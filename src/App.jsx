@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useRoutes } from "react-router-dom";
 
-import { Home, Patients, Appointments, DataRequests, LabResults, Settings, Info, Patient } from "./assets/Pages"
+import { Home, Patients, Appointments, DataRequests, LabResults, Settings, Info, Patient, Login, Signup } from "./assets/Pages"
 import Navbar from "./assets/Sections/Navbar.jsx"
 import Topbar from "./assets/Sections/Topbar.jsx"
 
@@ -28,6 +28,8 @@ function App() {
             <Route path="/LabResults"      element={<LabResults/>} />
             <Route path="/Settings"       element={<Settings/>} />
             <Route path="/Info"           element={<Info/>} />
+            <Route path="/Login"           element={<Login/>} />
+            <Route path="/Signup"           element={<Signup/>} />
           </Routes>
         </div>
       </Router>

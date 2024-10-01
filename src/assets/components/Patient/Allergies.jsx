@@ -7,7 +7,7 @@ const Allergies = ({allergyDetails}) => {
             <div className="info grid grid-cols-3">
                 <DetailInfo header={'Allergy id'} info={allergyDetails.id} />
                 <DetailInfo header={'Name'} info={allergyDetails.name} />
-                <DetailInfo header={'Description'} info={allergyDetails.description} />
+                <DetailInfo header={'Description max-w-full'} info={allergyDetails.description} />
             </div>
         </div>
     )

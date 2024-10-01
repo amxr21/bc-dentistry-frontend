@@ -8,11 +8,14 @@ const DentalChart = ({dentalTeethDetails}) => {
 
     const {toothFraction, setToothFraction} = useContext(TeethContext);
 
+    console.log(dentalTeethDetails);
+    
+
     // console.log(Object.values(dentalTeethDetails['teeth']));
     return (
-        <div className="dental-chart w-fit flex flex-col gap-y-4 w-10/12">
-            <h2 className="text-3xl font-semibold">Chart, id {dentalTeethDetails['id']}</h2>
-            <div className="chart grid gap-0 bg-gray-200 w-full" style={{gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr '}}>
+        <div className="dental-chart w-fit flex flex-col gap-y-4 max-w-10/12">
+            {/* <h2 className="text-3xl font-semibold">Chart, id {dentalTeethDetails['id']}</h2> */}
+            <div className="chart grid gap-0" style={{gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr '}}>
                 {/* <img src={CenterSide} alt="" /> */}
 
                 {
